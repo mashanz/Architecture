@@ -92,5 +92,24 @@ Terdapat banyak kemungkinan untuk membuat arsitektur yangg scalable dengan requi
 - Full Cloud Service
 - Mix Cloud + Managed Service
 
-### Managed Service using Cloudflare
-![CF](https://docs.google.com/drawings/d/1pgOvzqJOhUPkBYCR5R7hVH8FHCGLxclseek0PFV374o/edit?usp=sharing)
+### A. Managed Service using Cloudflare
+Apabila budget pas pasan dan 
+![CF](./Cloudflare%20Online%20Learning.svg)
+
+#### Description
+- Cloudflare DNS: Domain Management, SSL, Proxy, Email routing
+  - Kelebihan:
+    - DNS, SSL, Proxy, Email Routing bisa di manage di dashboard cloudflare
+- Cloudflare Page: Web ujian dan dashboard (FE & BE) di jalankan disini.
+  - Kelebihan:
+    - Deploy lebih cepat dengan budget pas pasan
+    - auto scalling, auto deployment, load balancing, bandwidth management semua sudah di handle cloudflare
+  - Kekurangan:
+    - limited build count untuk free plan, bisa di upgrade dengan paid plan
+    - Perlu custom adapter/script untuk optimasi API Cloudflare Page (edge computing, auto scaling)
+- Cloudflare KV: untuk menyimpan data berupa key-value (seperti login session, online status, frequently high through put data)
+- Cloudflare D1: severless SQL service untuk menyimpan database User, Soal & Jawaban, Submit Hasil Ujian dsb
+- Cloudflare R2: serverless object storage
+- Cloudflare Stream: live streaming / on-demand video service
+- Cloudflare Worker: serverless action untuk Cronjob dan eksekusi email service
+- Cloudflare Queue: serverless email service (sent/recieve)
