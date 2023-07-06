@@ -91,3 +91,6 @@ Terdapat banyak kemungkinan untuk membuat arsitektur yangg scalable dengan requi
 - Full Managed Service
 - Full Cloud Service
 - Mix Cloud + Managed Service
+
+### Managed Service using Cloudflare
+![CF](https://docs.google.com/drawings/d/1pgOvzqJOhUPkBYCR5R7hVH8FHCGLxclseek0PFV374o/edit?usp=sharing)
