@@ -95,7 +95,7 @@ Terdapat banyak kemungkinan untuk membuat arsitektur yangg scalable dengan requi
 ### A. Full Managed Service using Cloudflare
 Apabila budget development dan maintanance terbatas seperti kurang nya developer, serta waktu untuk release harus segera. Diperlukan arsitektur dengan service yang reliable, bisa scalable, tidak rumit dan bisa langsung configurasi + deploy dalam hitungan menit. Kita dapat menggunakan ekosistem cloudflare untuk case di sini:
 
-![CF](./Cloudflare%20Online%20Learning.svg)
+![CF](https://raw.githubusercontent.com/mashanz/Architecture/main/Cloudflare%20Online%20Learning.svg)
 
 #### Description
 - [Cloudflare DNS](https://developers.cloudflare.com/dns/): Domain Management, SSL, Proxy, [Email routing](https://developers.cloudflare.com/email-routing/)
