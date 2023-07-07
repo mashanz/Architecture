@@ -98,7 +98,7 @@ Apabila budget development dan maintanance terbatas seperti kurang nya developer
 ![CF](./Cloudflare%20Online%20Learning.svg)
 
 #### Description
-- [Cloudflare DNS](https://developers.cloudflare.com/dns/): Domain Management, SSL, Proxy, Email routing
+- [Cloudflare DNS](https://developers.cloudflare.com/dns/): Domain Management, SSL, Proxy, [Email routing](https://developers.cloudflare.com/email-routing/)
   - Kelebihan:
     - DNS, SSL, Proxy, Email Routing bisa di manage di dashboard cloudflare
 - [Cloudflare Page](https://developers.cloudflare.com/pages/): tempat deploy apps (Web ujian dan dashboard (FE & BE) di jalankan di sini) di sini saya rekomendasikan menggunakan LMS yang sudah jadi dan support cloudflare page API atau build from scratch dari framework populer.  (Fullstack framework populer yg sudah support adalah SvelteKit, NextJS, NuxtJS, ini akan jadi pembahasan terpisah apakah kita akan menggunakan monorepo, super app, user privilage menggunakan RBAC, Load testing dengan Locust, atau micro service, kita bisa diskusikan lebih mendalam di waktu terpisah).
