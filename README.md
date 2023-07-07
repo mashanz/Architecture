@@ -141,3 +141,4 @@ Kekurangan GCP:
 - Perlu adanya specialist DevOps / SRE untuk konfigurasi GKE (Perlu ada pembahasan terpisah untuk konfigurasi GKE di GCP)
 - Konfigurasi tidak tepat dapat menyebabkan pembengkakan biaya tagian GCP
 - Butuh waktu lebih lama untuk konfigurasi arsitektur
+- Google hanya menyediakan 1500 kirim emal per hari, perlu adanya 3rd party email service agar bisa mengirim lebih dari 1500 email dalam sehari
