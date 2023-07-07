@@ -110,7 +110,7 @@ Apabila budget development dan maintanance terbatas seperti kurang nya developer
     - Perlu custom adapter/script untuk optimasi API Cloudflare Page (edge computing, auto scaling)
 - Cloudflare KV: untuk menyimpan data berupa key-value (seperti login session, online status, frequently high through put data)
 - Cloudflare D1: severless SQL service untuk menyimpan database User, Soal & Jawaban, Submit Hasil Ujian dsb
-- Cloudflare R2: serverless object storage
+- Cloudflare R2: serverless object storage (pnyimpanan assets LMS seperti foto profile, gambar, dokumen dsb)
 - Cloudflare Stream: live streaming / on-demand video service (private video bisa di unggah di sini)
 - Cloudflare Worker: serverless action untuk Cronjob dan eksekusi email service
 - Cloudflare Queue: serverless email service (sent/recieve)
