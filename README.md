@@ -92,7 +92,7 @@ Terdapat banyak kemungkinan untuk membuat arsitektur yangg scalable dengan requi
 - Full Cloud Service
 - Mix Cloud + Managed Service (let's discuss more about it later)
 
-### A. Managed Service using Cloudflare
+### A. Full Managed Service using Cloudflare
 Apabila budget development dan maintanance terbatas seperti kurang nya developer, serta waktu untuk release harus segera. Diperlukan arsitektur dengan service yang reliable, bisa scalable, tidak rumit dan bisa langsung configurasi + deploy dalam hitungan menit. Kita dapat menggunakan ekosistem cloudflare untuk case di sini:
 
 ![CF](./Cloudflare%20Online%20Learning.svg)
@@ -101,7 +101,7 @@ Apabila budget development dan maintanance terbatas seperti kurang nya developer
 - Cloudflare DNS: Domain Management, SSL, Proxy, Email routing
   - Kelebihan:
     - DNS, SSL, Proxy, Email Routing bisa di manage di dashboard cloudflare
-- Cloudflare Page: Web ujian dan dashboard (FE & BE) di jalankan disini.
+- Cloudflare Page: tempat deploy apps (Web ujian dan dashboard (FE & BE) di jalankan di sini) di sini saya rekomendasikan menggunakan LMS yang sudah jadi dan support cloudflare page API atau build from scratch dari framework populer.  (Fullstack framework populer yg sudah support adalah SvelteKit, NextJS, NuxtJS, ini akan jadi pembahasan terpisah apakah kita akan menggunakan monorepo, super app, user privilage menggunakan RBAC, atau micro service, kita bisa diskusikan lebih mendalam di waktu terpisah)
   - Kelebihan:
     - Deploy lebih cepat dengan budget pas pasan
     - auto scalling, auto deployment, load balancing, bandwidth management semua sudah di handle cloudflare
@@ -111,6 +111,14 @@ Apabila budget development dan maintanance terbatas seperti kurang nya developer
 - Cloudflare KV: untuk menyimpan data berupa key-value (seperti login session, online status, frequently high through put data)
 - Cloudflare D1: severless SQL service untuk menyimpan database User, Soal & Jawaban, Submit Hasil Ujian dsb
 - Cloudflare R2: serverless object storage
-- Cloudflare Stream: live streaming / on-demand video service
+- Cloudflare Stream: live streaming / on-demand video service (private video bisa di unggah di sini)
 - Cloudflare Worker: serverless action untuk Cronjob dan eksekusi email service
 - Cloudflare Queue: serverless email service (sent/recieve)
+
+Kelebihan Cloudflare:
+  - Tidak seperti managed service lain seperti Vercel dan Heroku yang underlying nya adalah AWS, cloudflare memiliki service tersendiri dan reliability nya tidak bergantung dengan AWS.
+  - Trafik dan Keamanana semua sudah di manage oleh cloudflare seperti DDOS protection, captcha, trafic management, monitoring, dsb (kita tidak perlu setup dari 0 dan tinggal menggunakannya)
+  - Harga dan package relative lebih murah dari AWS dan GCP
+
+### B. Full Cloud Servcie using Google Cloud Platform
+
