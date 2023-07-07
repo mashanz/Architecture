@@ -127,7 +127,7 @@ Kekurangan:
 
 ### B. Full Cloud Servcie using Google Cloud Platform
 Apabila memiliki budget dan resource yang memadai serta waktu release tidak terlalu mepet. Bisa menggunakan Google Cloud Platform (GCP). Berikut arsitektur sederhana secara umum bila menggunakan GCP:
-![CF](./GCP%20Online%20Learning.svg)
+![CF](https://raw.githubusercontent.com/mashanz/Architecture/main/GCP%20Online%20Learning.svg)
 
 #### Description
 Secara umum, bentuk arsitektur tidak berbeda jauh dengan arsitektur managed service di bagian A (CLoudflare arsitektur). Namun tantangan tersendiri adalah di bagian GKE.
