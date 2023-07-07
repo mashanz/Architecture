@@ -116,10 +116,28 @@ Apabila budget development dan maintanance terbatas seperti kurang nya developer
 - [Cloudflare Queue](https://developers.cloudflare.com/queues/): serverless email service (sent/recieve)
 
 Kelebihan Cloudflare:
-  - Tidak seperti managed service lain seperti Vercel dan Heroku yang underlying nya adalah AWS, cloudflare memiliki service tersendiri dan reliability nya tidak bergantung dengan AWS.
-  - Trafik dan Keamanana semua sudah di manage oleh cloudflare seperti DDOS protection, captcha, trafic management, monitoring, dsb (kita tidak perlu setup dari 0 dan tinggal menggunakannya)
-  - Harga dan package relative lebih murah dari AWS dan GCP
+- Tidak seperti managed service lain seperti Vercel dan Heroku yang underlying nya adalah AWS, cloudflare memiliki service tersendiri dan reliability nya tidak bergantung dengan AWS.
+- Trafik dan Keamanana semua sudah di manage oleh cloudflare seperti DDOS protection, captcha, trafic management, monitoring, dsb (kita tidak perlu setup dari 0 dan tinggal menggunakannya)
+- Harga dan package relative lebih murah dari AWS dan GCP
+- Dari setup arsitektur, development app hingga deployment bisa di lakukan hanya oleh seorang Engineer.
+
+Kekurangan:
+- Harus mengikuti API Cloudflare
+- Memiliki keterbatasan di setiap service nya. [Dokumentasi Cloudflare](https://cloudflare.com)
 
 ### B. Full Cloud Servcie using Google Cloud Platform
 Apabila memiliki budget dan resource yang memadai serta waktu release tidak terlalu mepet. Bisa menggunakan Google Cloud Platform (GCP). Berikut arsitektur sederhana secara umum bila menggunakan GCP:
 ![CF](./GCP%20Online%20Learning.svg)
+
+#### Description
+Secara umum, bentuk arsitektur tidak berbeda jauh dengan arsitektur managed service di bagian A (CLoudflare arsitektur). Namun tantangan tersendiri adalah di bagian GKE.
+Auto scaling, Load Balancing, Networking etc semua harus di konfigurasi sendiri dan memerlukan engineer yangg memiliki specialisasi di bidang DevOps / SRE.
+
+Kelebihan GCP:
+- Full customasi dalam pembuatan arsitektur.
+- High Reliability
+
+Kekurangan GCP:
+- Perlu adanya specialist DevOps / SRE untuk konfigurasi GKE (Perlu ada pembahasan terpisah untuk konfigurasi GKE di GCP)
+- Konfigurasi tidak tepat dapat menyebabkan pembengkakan biaya tagian GCP
+- Butuh waktu lebih lama untuk konfigurasi arsitektur
