@@ -87,13 +87,14 @@ tersebut mengalami kegagalan dalam menangani request dari user
 - Diperlukan backup plan seperti backup server, backup database, offline first experience (bila server mati / tidak ada internet)
 
 ## Design Architecture
-Terdapat banyak kemungkinan untuk membuat arsitektur yangg scalable dengan requirement di atas, namun saya akan memberikan 3 contoh arsitektur yg mungkin untuk dibuat:
+Terdapat banyak kemungkinan untuk membuat arsitektur yangg scalable dengan requirement di atas. Secara umum terdapat 3 kemungkinan, namun saya akan menjelaskan 2 contoh arsitektur yg mungkin untuk dibuat:
 - Full Managed Service
 - Full Cloud Service
-- Mix Cloud + Managed Service
+- Mix Cloud + Managed Service (let's discuss more about it later)
 
 ### A. Managed Service using Cloudflare
-Apabila budget pas pasan dan 
+Apabila budget development dan maintanance terbatas seperti kurang nya developer, serta waktu untuk release harus segera. Diperlukan arsitektur dengan service yang reliable, bisa scalable, tidak rumit dan bisa langsung configurasi + deploy dalam hitungan menit. Kita dapat menggunakan ekosistem cloudflare untuk case di sini:
+
 ![CF](./Cloudflare%20Online%20Learning.svg)
 
 #### Description
