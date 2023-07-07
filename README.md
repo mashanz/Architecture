@@ -121,4 +121,5 @@ Kelebihan Cloudflare:
   - Harga dan package relative lebih murah dari AWS dan GCP
 
 ### B. Full Cloud Servcie using Google Cloud Platform
-
+Apabila memiliki budget dan resource yang memadai serta waktu release tidak terlalu mepet. Bisa menggunakan Google Cloud Platform (GCP). Berikut arsitektur sederhana secara umum bila menggunakan GCP:
+![CF](./GCP%20Online%20Learning.svg)
